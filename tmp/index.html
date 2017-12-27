@@ -11,15 +11,18 @@
     <link rel="icon" type="image/x-icon" href="img/stevensLogo.png">
 </head>
 
+
+<!-- TODO: javascript for navigation, responsive design -->
 <body>
     <div class="page">
         <div class="nav">
-            <img class="profile-picture" src="img/profile.jpg"/>
+            <a href="index.html"><img class="profile-picture" src="img/profile.jpg"/></a>
             <nav>
-                <a href="restaurants.html">TEACHING</a><br>
-                <a href="attractions.html">PUBLICATIONS</a><br>
-                <a href="transportation.html">MS ADVISING</a><br>
-                <a href="credits.html">CV</a><br>
+                <a href="#teaching">TEACHING</a><br>
+                <a href="#publications">PUBLICATIONS</a><br>
+                <a href="#advising">MS ADVISING</a><br>
+                <a href="faq.html">MS FAQ</a><br>
+                <a href="cv.pdf">CV</a><br>
             </nav>
             <ul class="menu-btn material-icon">MENU</ul> 
         </div>
@@ -28,13 +31,12 @@
                 <p>
                     <!-- <span id="home-title">IRAKLIS <span id="text-primary">TSEKOURAKIS</span></span> -->
                     <h1 id="home-title">IRAKLIS <span id="text-primary">TSEKOURAKIS</span></h1>
-                    1 CASTLE POINT ON HUDSON, HOBOKEN, NJ 07030. (201) 216 - 5390 <br>
-                    ITSEKOUR@STEVENS.EDU <br>
-                    OFFICE: NORTH BUILDING 308
+                    1 CASTLE POINT ON HUDSON, HOBOKEN, NJ 07030 <br>
+                    (201) 216 - 5390 &middot ITSEKOUR@STEVENS.EDU 
                 </p>
                 <p>
-                    ASSISTANT TEACHING PROFESSOR<br>
-                    ASSOCIATE CHAIR FOR GRADUATE STUDIES (COMPUTER SCIENCE)
+                    Assistant Teaching Professor<br>
+                    Associate Chair for Graduate Studies (Computer Science)
                 </p>
                 <ul class="inline-list">
                     <li>
@@ -45,23 +47,106 @@
                  </li>
              </ul>
          </div>
-         <div class="no-padding"><hr></div>
-         <div class="info">
-            <h2> TEACHING </h2>
-            <p>
-                CS 492 - Operating Systems <span class="align-right">Srping 2018</span> <br>
-                Class notes etc. are available on Canvas.
-            </p>
-            <p>
-                CS 146: Introduction to Web Programming and Project Development <span class="align-right">Fall 2017</span> <br>
-                Class notes etc. are available on Canvas.
-            </p>
 
-        </div>
-        <div class="footer">
-           <p>  ©2017 Iraklis Tsekourakis </p>
-       </div>
-   </div>
+         <div class="cover"></div>
+
+         <div class="teaching">
+            <a name="teaching"></a>
+            <h2> TEACHING </h2>
+
+<pre>
+/* Notes etc. are available on Canvas */
+CS 492 {
+    Operating Systems;
+    // Spring 2018
+}
+
+/* Notes etc. are available on Canvas */
+CS 146 {
+    Introduction to Web Programming and Project Development;
+    // Fall 2017
+}
+
+/* Notes etc. are available on Canvas */
+CS 492 {
+    Operating Systems;
+    // Spring 2017
+}
+
+/* Notes etc. are available on Canvas */
+CS 146 {
+    Introduction to Web Programming and Project Development;
+    // Fall 2016
+}
+
+/* Notes etc. are available on Canvas */
+CS 443 {
+    Database Practicum;
+    // Fall 2017
+}
+
+exit(0);
+</pre>
+</div>
+
+<div class="no-padding"><hr></div>
+
+<div class="publications">
+    <a name="publications"></a>
+    <h2> PUBLICATIONS </h2>
+
+    <p> Iraklis Tsekourakis, Philippos Mordohai <br>
+        <a href="sf_rfmi17.pdf">A comparison of Scene Flow Estimation Paradigms</a> <br>
+    RFMI 2017 </p>
+
+    <p> Iraklis Tsekourakis, Philippos Mordohai <br>
+        <a href="http://ieeexplore.ieee.org/abstract/document/7335479/">Consistent 3D Background Model Estimation from Multi-Viewpoint Videos</a> <br>
+    3DV 2015 </p>
+
+    <p> Iraklis Tsekourakis, Christos Orlis, Dimosthenis Ioannidis, Dimitrios Tzovaras<br>
+        <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6458964">The SAVE ME project real-time disaster mitigation and evacuation management system</a><br>
+    7th IET International Conference on System Safety, incorporating the Cyber Security Conference 2012 </p>
+
+    <p> Iraklis Tsekourakis, Christos Orlis, Dimosthenis Ioannidis, Dimitrios Tzovaras<br>
+        <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-34050-5_1">A Decision Support System for Real-Time 
+        Evacuation Management and Rescue Team Planning during Hazardous Events in Public Infrastructures</a> <br>
+    13th International Conference on Transport Systems Telematics, TST 2012</p>
+
+    <p> Iraklis Tsekourakis, Andreas L. Symeonidis<br>
+        <a href="http://link.springer.com/chapter/10.1007/978-3-642-34889-1_7">Dealing with Trust and Reputation in 
+        Unreliable Multi-agent Trading Environments</a><br>
+    The 2011 Workshop on Trading Agent Design and Analysis, TADA 2011, held with the 22nd International Joint Conference On Artificial Intelligence, IJCAI 2011</p>
+</div>
+
+<div class="no-padding"><hr></div>
+
+<div class="advising">
+    <a name="advising"></a>
+    <h2> MS ADVISING </h2>
+
+    <p>
+        Please see the <a href="faq.html">FAQ</a> before contacting your advisor. Many of the answers are already there.<br>
+        See the <a href="MSorientation.pdf">Fall 2017 orientation notes</a> for more information.
+    </p>
+    <p>
+        You can find your advisor by
+    </p>
+    <p>
+        I cannot help with issues related to admissions, finances or student visas. Please contact the appropriate office for these matters.
+    </p>
+    <p>
+        I do not waive prerequisites for courses without the consent of the instructor. (This is because I do not claim to know which specific background material is required for each class.) If you think that you have covered all the prerequisites for a class, please email the instructor or bring a completed change of enrollment form to class for him or her to sign. These forms are available <a href="https://www.stevens.edu/directory/office-registrar/forms">here</a> along with other useful forms and the schedule of classes.
+    </p>
+    <p>
+        Please send me an email with your questions before stopping by my office. If I can't answer via email, we'll arrange an appointment. Email is preferred instead of telephone for record-keeping and other purposes.
+    </p>
+</div>
+
+<footer class="no-padding">
+    <span>©2017 Iraklis Tsekourakis</span>
+    <a href="index.html" id="footer-link">Home</a>
+</footer>
+</div>
 </div>
 </body>
 
