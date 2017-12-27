@@ -18,19 +18,12 @@ a {
 .profile-picture {
     width: 160px;
     border-radius: 50%;
-    border: 10px solid grey;
+    border: 10px solid lightgrey;
 }
 
-.profile-picture-container {
-    width: 180px;
-    border-radius: 50%
-    background-color: white;
-}
 
-.page {
-    position: fixed;
-    display: flex;
-    width: 100vw;
+body {
+    color: #4d4d4d;
 }
 
 .footer {
@@ -38,8 +31,8 @@ a {
 }
 
 .nav {
-    flex:1;
-    min-width: 270px;
+    position:fixed;
+    width: 270px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -58,420 +51,74 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: lightgrey;
     display: block;
     padding-top: 5px;
 }
 
 .one-column {
-    color:lightgrey;
-    flex:4;
-    height: 100vh;
+    margin-left: 270px;
     overflow-y: auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.no-padding {
+    paddig:0px;
 }
 
 
 .home-section {
-
-    background-image: url("../img/cover.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-
-
-
-.center-items {
-    display: flex;
-
-    align-items: center;
-}
-
-.column {
+    height: 100vh;
+    overflow-y: auto;
     display: flex;
     flex-direction: column;
-}
-
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.center-text {
-    text-align: center;
-}
-
-.restaurantspage {
-    flex-direction: column;
-    margin: 0 auto;
-    background: white;
-}
-
-
-
-.white-background {
-    background: white;
-}
-
-.title-1 {
-    text-align: center;
-    font-size: 36px;
-    font-family: serif;
-}
-
-.title-2 {
-    text-align: center;
-    font-size: 24px;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-p {
-    text-align: center;
-    align-content: center;
-    max-width: 60%;
-    margin: auto;
-}
-
-
-
-.restaurantimage {
-    display: flex;
     justify-content: center;
-    width: 65%;
-    margin: auto;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 30px;
 }
 
-
-
-figcaption {
-    font-family: "Elephant";
-    text-align: center;
-    font-size: 11px;
-    text-decoration-color: lightgrey;
-    font-weight: lighter;
+.info {
+    padding-left: 60px;
+    padding-right: 30px;
 }
-
-.home-content {
+.home-section p {
     display: flex;
-    justify-content: center;
-    align-content: center;
+
     flex-direction: column;
-    align-items: center;
-    background: white;
+    align-items: flex-start;
 }
 
-.home-picture {
-    margin: 20px;
+.yellow, a:hover {
+    color: #ffc107;
+    margin: 0px;
 }
 
-/*table.cred,
-th.cred,
-td.cred {
-    border: 1px solid black;
-    text-align: center;
+a span {
+    color: #4d4d4d;
 }
 
-table.cred {
-    border-collapse: collapse;
-}
-
-.cred {
-    align-items: center;
-    margin: 0 auto;
-}
-*/
-
-main-content {
-    width: 70%;
-    background-color: white;
-    color: red;
-    /*margin: 40px, 60px, 40px, 60px;*/
-}
-
-.txt-center {
-    text-align: center;
-}
-
-.hide {
-    display: none;
-}
-
-.clear {
-    float: none;
-    clear: both;
-}
-
-.rating {
-    width: 90px;
-    unicode-bidi: bidi-override;
-    direction: rtl;
-    text-align: center;
-    position: relative;
-}
-
-.rating>label {
-    float: right;
+.inline-list li {
     display: inline;
+    padding-right: 42px;
+}
+ul {
     padding: 0;
-    margin: 0;
-    position: relative;
-    width: 1.1em;
-    cursor: pointer;
-    color: #000;
+    list-style-type: none;
 }
 
-.rating>label:hover,
-.rating>label:hover~label,
-.rating>input.radio-btn:checked~label {
-    color: transparent;
-}
-
-.rating>label:hover:before,
-.rating>label:hover~label:before,
-.rating>input.radio-btn:checked~label:before,
-.rating>input.radio-btn:checked~label:before {
-    content: "\2605";
-    position: absolute;
-    left: 0;
-    color: #FFD700;
-}
-
-.review {
-    margin: 10px 10% 50px 10%;
-    height: 100%;
-    width: 80%;
-    text-align: center;
-    border: 3px solid black;
-    background: rgba(255, 255, 255, 0.2);
-    font-family: oswaldl;
-}
-
-.stars {
-    float: left;
-    margin-left: 1em;
-}
-
-.reviewSum {
-    float: left;
-    font-style: normal;
-}
-
-.reviewAuthor {
-    float: right;
-    position: relative;
-    margin: -20px 5px;
-}
-
-.reviewContent {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    margin-top: 4em;
-    margin-bottom: 2em;
-    margin-left: 1em;
+#home-title {
     color: black;
+    font-size: 66px;
 }
 
-.hidden {
-    display: none;
+#text-primary {
+    color: grey;
 }
 
-
-form {
-    font-family: Roboto;
-    font-size: 20px;
-    width: 100%;
+.align-right {
+    align-content: flex-end;
 }
 
-fieldset {
-    border: 0px;
-    padding: 15px;
-    box-shadow: 0 0 10px 1px #ddd;
-
-}
-
-fieldset legend {
-    color: #e1262a;
-    padding: 5px 10px ;
-    background-color: #fcf8f7;
-    font-size: 32px;
-    border: none;
-    margin-left: 20px;
-}
-
-option{
-    margin: 20px;
-}
-
-
-input[type=text] {
-    font-family: Roboto;
-    font-size: 20px;
-    border: 0px;
-    outline: none;
-    height: 20px;
-    background-color: transparent;
-    border-bottom: 2px solid #e1262a;
-
-}
-
-
-
-
-
-
-
-
-
-.parallax-transportations {
-    background-image: url("../img/transportation_theme.jpg");
-}
-
-
-.parallax-drive-map {
-    background-image: url("../img/transportation_drive_map.jpg");
-}
-
-.parallax-path {
-    background-image: url("../img/transportation_path.jpg");
-}
-
-.parallax-bus {
-    background-image: url("../img/transportation_bus.jpg");
-}
-
-.parallax-ferry {
-    background-image: url("../img/transportation_ferry.jpg");
-}
-
-.parallax-attraction {
-    background-image: url("../img/attraction_theme.jpg");
-}
-
-.parallax-home {
-    background-image: url("../img/home_theme.jpg");
-    height: 400px;
-    padding-top: 200px;
-    padding-bottom: 200px;
-}
-
-.parallax-home p::first-letter {
-    font-size: 200%;
-    color: #ff0000;
-}
-
-.parallax-home button {
-    height: 100px;
-    width: 100px;
-    font-size: 70px;
-    margin-bottom: 30px;
-    color: #ffffff;
-    text-align: center;
-    outline: none;
-
-    background-color: transparent;
-    border-width: 0px;
-    border-radius: 100%;
-    border-color: red;
-    transition: all 0.5s;
-}
-
-.parallax-home button:hover {
-    border-width: 100%;
-    font-size: 70px;
-    color: #ffffff;
-    background-color: #ff0000;
-    border-color: transparent;
-}
-
-.parallax-restaurant {
-    background-image: url("../img/restaurant_theme.jpg");
-}
-
-.parallax-credit {
-    background-image: url("../img/credit_theme.jpg");
-}
-
-.parallax-restaurant-go {
-    background-image: url("../img/restaurant_go.jpg");
-}
-
-
-
-
-
-
-
-
-
-/* Desktop styling */
-
-@media only screen and (min-width: 800px) {
-
-    main-content {
-        margin: 40px, 60px, 40px, 60px;
-    }
-
-    figure img {
-        display: flex;
-        justify-content: center;
-        width: 65%;
-        margin: auto;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Tablet styling */
-
-@media only screen and (max-width: 800px) {
-
-    main-content {
-        margin: 20px, 0px, 20px, 0px;
-    }
-    .parallax-home p {
-        font-size: 18px;
-        font-weight: lighter;
-    }
-
-    .parallax-home {
-        height: 500px;
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-/* Phone styling */
-
-@media only screen and (max-width: 400px) {
-    .parallax-home p {
-        font-size: 15px;
-        font-weight: lighter;
-    }
-    .parallax-home {
-        padding-top: 100px;
-        padding-bottom: 200px;
-    }
-}
