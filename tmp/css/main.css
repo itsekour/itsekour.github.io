@@ -1,23 +1,45 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
-@font-face {
-    font-family: oswaldl;
-    src: url('/fonts/Oswald-ExtraLight.ttf');
-}
 
 body {
+    font-family:'Open Sans',serif;
     margin: 0px;
-    font-family: sans-serif;
     color:black;
 }
 
 a {
     text-decoration: none;
-    color: lightgrey;
+    color: #E5AD06;
 }
 
+nav a {
+    color:lightgrey;
+}
 
+h1, h2, h3, h4, .special{
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+}
+
+.special {
+    font-size: 1.3em;
+}
+
+h1 {
+    margin: 0px;
+    font-size:5.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+.title-text {
+    font-size: 1.5em;
+}
 
 .profile-picture {
     width: 160px;
@@ -93,12 +115,13 @@ nav a {
 
 
 .home-section {
-    height: 100vh;
+    font-family: 'Saira Extra Condensed',serif;
+    font-weight: 700;
+    min-height: 100vh;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;
     padding-left: 60px;
     padding-right: 60px;
 }
@@ -106,7 +129,7 @@ nav a {
 .teaching, .publications, .advising {
     padding-left: 60px;
     padding-right: 60px;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -127,6 +150,7 @@ nav a {
     margin: 0px;
 }
 
+
 a span {
     color: #4d4d4d;
 }
@@ -140,10 +164,6 @@ ul {
     list-style-type: none;
 }
 
-#home-title {
-    color: black;
-    font-size: 66px;
-}
 
 #text-primary {
     color: grey;
