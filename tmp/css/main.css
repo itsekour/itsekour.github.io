@@ -14,6 +14,12 @@ nav a {
     color:lightgrey;
 }
 
+a [href="index.hmtl"] {
+    color: #ffc107;
+    font-weight: bold;
+    margin: 0px;
+}
+
 h1, h2, h3, h4, .special{
     font-family: 'Saira Extra Condensed',serif;
     font-weight: 700;
@@ -73,6 +79,7 @@ footer {
 nav {
     text-align: center;
     padding-top: 30px;
+
 }
 
 nav a {
@@ -186,8 +193,13 @@ footer a {
 }
 
 .hide {
-        display: none;
-    }
+    display: none;
+}
+
+.show {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* Tablet styling */
@@ -203,6 +215,8 @@ footer a {
         justify-content: space-between;
         align-items: flex-start;
         background-color: #4d4d4d;
+        transition: height 0.4s;
+        overflow-y: hidden;
         
     }
 
@@ -221,6 +235,7 @@ footer a {
     .nav-left {
         display: flex;
         flex-direction: column;
+        margin-left: 10px;
     }
 
 
@@ -230,7 +245,7 @@ footer a {
         width:50px;
         border-radius: 50%;
         border: 0px;
-        margin-left: 10px;
+        
     }
 
     #menu-btn {
@@ -244,8 +259,6 @@ footer a {
         cursor: pointer;
 
     }
-
-   
 
 
     .menu-icon {
@@ -318,15 +331,15 @@ footer a {
 
 @media only screen and (max-width: 500px) {
 
- pre {
-        display: none;
-    }
-    
-    .mobile-teaching {
-        display: flex;
-        min-width: 300px;
-        width: 300px;
-    }
+   pre {
+    display: none;
+}
+
+.mobile-teaching {
+    display: flex;
+    min-width: 300px;
+    width: 300px;
+}
 
 }
 
