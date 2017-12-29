@@ -217,11 +217,12 @@ footer a {
         background-color: #4d4d4d;
         transition: height 0.4s;
         overflow-y: hidden;
-        
+
     }
 
     .one-column {
-        margin-top: 60px;
+        padding-top: 60px;
+        margin-left: 0px;
     }
 
     .nav-expand {
@@ -273,11 +274,6 @@ footer a {
         margin-left: 0px;
     }
 
-    .one-column {
-        margin-left: 0px;
-
-    }
-
     .paddings {
         padding-left: 30px;
         padding-right: 30px;
@@ -285,6 +281,11 @@ footer a {
 
     .cover {
         background-size: 50%, cover;
+    }
+
+    .teaching, .publications {
+        display: block;
+        padding-top: 60px;
     }
 
     
@@ -323,7 +324,10 @@ footer a {
         padding-right: 10px;
     }
 
-
+    .advising {
+        display: block;
+        padding-top: 60px;
+    }
 
 }
 
