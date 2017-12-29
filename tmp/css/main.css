@@ -301,6 +301,7 @@ footer a {
 
     .cover {
         background-attachment: initial;
+        height:300px;
     }
 
     h1 {
@@ -338,6 +339,26 @@ footer a {
    pre {
     display: none;
 }
+
+h1 {
+        font-size:3em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    h4 {
+        font-size: 1.2em;
+    }
+
+    .title-text {
+        font-size: 1.2em;
+    }
+
+    body{
+        font-size: 0.9em;
+    }
 
 .mobile-teaching {
     display: flex;
