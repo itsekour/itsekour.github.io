@@ -16,6 +16,8 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/stevensLogo.png">
+    <script type="text/javascript" src="js/script.js"></script>   
+
 
 </head>
 
@@ -24,21 +26,24 @@
 <body>
     <div class="page">
         <div class="nav">
-            <img class="profile-picture" src="img/profile.jpg"/>
-            <nav>
-                <a href="index.html">ABOUT</a><br>
-                <a href="#teaching">TEACHING</a><br>
-                <a href="#publications">PUBLICATIONS</a><br>
-                <a href="#advising">MS ADVISING</a><br>
-                <a href="faq.html">MS FAQ</a><br>
-                <a href="cv.pdf">CV</a><br>
-            </nav>
-            <button class="menu-btn" type="button" onclick="toggleMenu();">
-               <!-- <span class="fa fa-bars" aria-hidden="true"></span> -->
-               <div class="menu-icon"></div>
-               <div class="menu-icon"></div>
-               <div class="menu-icon"></div>
-           </button>
+            <div class="nav-left">
+                <img class="profile-picture" id="profPic" src="img/profile.jpg"/>
+                <nav>
+                    <a href="index.html">ABOUT</a><br>
+                    <a href="#teaching">TEACHING</a><br>
+                    <a href="#publications">PUBLICATIONS</a><br>
+                    <a href="#advising">MS ADVISING</a><br>
+                    <a href="faq.html">MS FAQ</a><br>
+                    <a href="cv.pdf">CV</a><br>
+                </nav>
+            </div>
+            <div class="nav-right">
+                <button id="menu-btn" type="button">
+                 <div class="menu-icon"></div>
+                 <div class="menu-icon"></div>
+                 <div class="menu-icon"></div>
+             </button>
+         </div>
        </div>
         <div class="one-column">
             <div class="home-section paddings">

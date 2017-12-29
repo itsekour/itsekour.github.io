@@ -66,7 +66,7 @@ footer {
     background-color: #4d4d4d;
 }
 
-.menu-btn {
+#menu-btn {
     display: none;
 }
 
@@ -78,7 +78,7 @@ nav {
 nav a {
     color: lightgrey;
     display: block;
-    padding-top: 5px;
+    padding: 0px;
 }
 
 .one-column {
@@ -185,6 +185,9 @@ footer a {
     display: none;
 }
 
+.hide {
+        display: none;
+    }
 
 
 /* Tablet styling */
@@ -198,7 +201,7 @@ footer a {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
         background-color: #4d4d4d;
         
     }
@@ -207,21 +210,33 @@ footer a {
         padding-top: 60px;
     }
 
+    .nav-expand {
+        height: 300px;
+    }
+
     nav {
         display: none;
     }
 
+    .nav-left {
+        display: flex;
+        flex-direction: column;
+    }
+
+
     .profile-picture {
-        display: inline;
+        margin-top:4px;
+        display: flex;
         width:50px;
         border-radius: 50%;
         border: 0px;
         margin-left: 10px;
     }
 
-    .menu-btn {
+    #menu-btn {
         display: flex;
         margin-right: 10px;
+        margin-top: 10px;
         flex-direction: column;
         background-color: #4d4d4d;
         padding-top: 7px;

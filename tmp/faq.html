@@ -3,13 +3,14 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iraklis Tsekourakis</title>
-    <link href="css/main.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="img/stevensLogo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iraklis Tsekourakis</title>
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/stevensLogo.png">
+  <script type="text/javascript" src="js/script.js"></script>   
 </head>
 
 
@@ -17,20 +18,26 @@
 
   <div class="page">
     <div class="nav">
-      <img class="profile-picture" src="img/profile.jpg"/>
-      <nav>
-       <a href="index.html">ABOUT</a><br>
-       <a href="index.html#teaching">TEACHING</a><br>
-       <a href="index.html#publications">PUBLICATIONS</a><br>
-       <a href="index.html#advising">MS ADVISING</a><br>
-       <a href="faq.html">MS FAQ</a><br>
-       <a href="cv.pdf">CV</a><br>
-     </nav>
-     <button class="menu-btn" type="button" onclick="toggleMenu();">
-       <span class="fa fa-bars" aria-hidden="true"></span>
-    </button>
-  </div>
-  <div class="one-column paddings">
+      <div class="nav-left">
+        <img class="profile-picture" src="img/profile.jpg"/>
+        <nav>
+          <a href="index.html">ABOUT</a><br>
+          <a href="#teaching">TEACHING</a><br>
+          <a href="#publications">PUBLICATIONS</a><br>
+          <a href="#advising">MS ADVISING</a><br>
+          <a href="faq.html">MS FAQ</a><br>
+          <a href="cv.pdf">CV</a><br>
+        </nav>
+      </div>
+      <div class="nav-right">
+        <button id="menu-btn" type="button">
+         <div class="menu-icon"></div>
+         <div class="menu-icon"></div>
+         <div class="menu-icon"></div>
+       </button>
+     </div>
+   </div>
+   <div class="one-column paddings">
 
     <h1 class="faq-h1">FAQ</h1>
     <h2>Frequently Asked Questions (graduate level)</h2>
@@ -162,7 +169,7 @@
     <p>For more details on how to apply please visit the Office of Graduate Admissions website at <a href="http://www.stevens.edu/graduate">www.stevens.edu/graduate</a>.</p>
 
   </p>
-  
+
 </div>
 <footer class="no-padding margin-left-offset">
   <span>©2017 Iraklis Tsekourakis</span>
