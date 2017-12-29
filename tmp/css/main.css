@@ -222,15 +222,23 @@ footer a {
     .menu-btn {
         display: flex;
         margin-right: 10px;
+        flex-direction: column;
+        background-color: #4d4d4d;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        cursor: pointer;
 
     }
 
-    .menu-btn span {
-        font-size: 2.5em;
+   
+
+
+    .menu-icon {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+        margin: 3px 10px;
     }
-
-
-    
 
 
     .margin-left-offset {
@@ -251,6 +259,7 @@ footer a {
         background-size: 50%, cover;
     }
 
+    
 }
 
 
