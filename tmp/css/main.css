@@ -90,6 +90,7 @@ nav a {
 
 .one-column {
     margin-left: 270px;
+    max-width: 1440px;
     overflow-y: auto;
     display:flex;
     flex-direction: column;
