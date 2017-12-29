@@ -1,5 +1,4 @@
 
-
 body {
     font-family:'Open Sans',serif;
     margin: 0px;
@@ -122,18 +121,13 @@ nav a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 60px;
-    padding-right: 60px;
 }
 
 .teaching, .publications, .advising {
-    padding-left: 60px;
-    padding-right: 60px;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 16px;
 }
 
 
@@ -180,8 +174,127 @@ pre {
     text-shadow: 0 0 2px #5e5;
     font-size: 13px;
     min-width: 460px;
+    max-width:680px;
 }
 
 footer a {
     color: white;
 }
+
+.mobile-teaching {
+    display: none;
+}
+
+
+
+/* Tablet styling */
+
+@media only screen and (max-width: 1024px) {
+
+    .nav {
+        position:fixed;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #4d4d4d;
+        
+    }
+
+    .one-column {
+        padding-top: 60px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .profile-picture {
+        display: inline;
+        width:50px;
+        border-radius: 50%;
+        border: 0px;
+        margin-left: 10px;
+    }
+
+    .menu-btn {
+        display: flex;
+        margin-right: 10px;
+
+    }
+
+    .menu-btn span {
+        font-size: 30px;
+    }
+
+
+    .margin-left-offset {
+        margin-left: 0px;
+    }
+
+    .one-column {
+        margin-left: 0px;
+
+    }
+
+    .paddings {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .cover {
+        background-size: 50%, cover;
+    }
+
+}
+
+
+
+
+
+/* Phone styling */
+
+@media only screen and (max-width: 640px) {
+
+    h1 {
+        font-size:3.5em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    h4 {
+        font-size: 1.3em;
+    }
+
+    .title-text {
+        font-size: 1.3em;
+    }
+
+    .paddings {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+}
+
+/* Small Phone styling */
+
+@media only screen and (max-width: 500px) {
+
+ pre {
+        display: none;
+    }
+    
+    .mobile-teaching {
+        display: flex;
+        min-width: 300px;
+        width: 300px;
+    }
+
+}
+
+

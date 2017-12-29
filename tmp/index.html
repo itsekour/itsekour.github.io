@@ -20,7 +20,7 @@
 </head>
 
 
-<!-- TODO: javascript for navigation, responsive design -->
+<!-- TODO: javascript for navigation, and responsive menus-->
 <body>
     <div class="page">
         <div class="nav">
@@ -33,10 +33,12 @@
                 <a href="faq.html">MS FAQ</a><br>
                 <a href="cv.pdf">CV</a><br>
             </nav>
-            <ul class="menu-btn material-icon">MENU</ul> 
+            <button class="menu-btn" type="button" onclick="toggleMenu();">
+                <span class="fa fa-bars" aria-hidden="true"></span>
+            </button>
         </div>
         <div class="one-column">
-            <div class="home-section">
+            <div class="home-section paddings">
                 <p>
                     <h1 id="home-title">IRAKLIS <span id="text-primary">TSEKOURAKIS</span></h1>
                     <span class="title-text"> NORTH BUILDING 308, HOBOKEN, NJ 07030 &middot
@@ -59,8 +61,46 @@
          <div class="cover"></div>
          <a name="teaching"></a>
 
-         <div class="teaching">
+         <div class="teaching paddings">
             <h2> TEACHING </h2>
+
+            <pre class="mobile-teaching">
+/* Notes etc. on Canvas */
+CS 492 {
+    Operating Systems;
+    // Spring 2018
+}
+
+/* Notes etc. on Canvas */
+CS 146 {
+    Intro to Web Programming
+    and Project Development;
+    // Fall 2017
+}
+
+/* Notes etc. on Canvas */
+CS 492 {
+    Operating Systems;
+    // Spring 2017
+}
+
+/* Notes etc. on Canvas */
+CS 146 {
+    Intro to Web Programming 
+    and Project Development;
+    // Fall 2016
+}
+
+/* Notes etc. on Canvas */
+CS 443 {
+    Database Practicum;
+    // Fall 2017
+}
+
+/* Thanks to Isaac and Rob for
+the hacker terminal styling. */
+exit(0);
+            </pre>
 
             <pre>
 /* Notes etc. are available on Canvas */
@@ -101,7 +141,7 @@ exit(0);
         <div class="no-padding"><hr></div>
         <a name="publications"></a>
 
-        <div class="publications">
+        <div class="publications paddings">
             <h2> PUBLICATIONS </h2>
             <p> Iraklis Tsekourakis, Philippos Mordohai <br>
                 <a href="sf_rfmi17.pdf">A comparison of Scene Flow Estimation Paradigms</a> <br>
@@ -130,7 +170,7 @@ exit(0);
         <a name="advising"></a>
 
 
-        <div class="advising">
+        <div class="advising paddings">
             <h2> MS ADVISING </h2>
 
             <p>
