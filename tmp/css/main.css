@@ -230,6 +230,9 @@ footer a {
     }
 
 
+    
+
+
     .margin-left-offset {
         margin-left: 0px;
     }
@@ -282,6 +285,11 @@ footer a {
         padding-left: 10px;
         padding-right: 10px;
     }
+
+    .menu-btn span {
+        font-size: 20px;
+    }
+
 
 }
 
